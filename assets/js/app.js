@@ -6,11 +6,11 @@
 const getData = url => {
     API.get(url)
     .then(x => {
-        //console.log(x);
+        console.log(x);
     });
 }
 
-getData(swURL)
+getData(swURL);
 
 
 //console.log(charOffline);

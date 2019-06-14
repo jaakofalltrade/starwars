@@ -1,6 +1,4 @@
-
 console.log(dataJSON);
-
 const findMatch = (word) => {
     API.get(`${swURL}?search=${word}`)
     .then(x => {
@@ -21,7 +19,22 @@ const findMatch = (word) => {
                                     </div>
                                     <img src="${res.image}" alt="">
                                 </div>
-                                <div class="face back"><h2>${result.name}</h2></div>
+                                <div class="face back">
+                                    <div class="back-info">
+                                        <div class="back-header"><p>Character Information</p></div>
+                                        <div class="back-body">
+                                            <p>Name:          ${result.name}</p>
+                                            <p>Gender:        ${result.gender}</p>
+                                            <p>Birthyear:     ${result.birth_year}</p>
+                                            <p>Eye Color:     ${result.eye_color}</p>
+                                            <p>Skin Color:    ${result.skin_color}</p>
+                                            <p>Height:        ${result.height}</p>
+                                            <p>Mass:          ${result.mass}</p>
+                                            <p>Species:       ${res.species}</p>
+                                            <p>Born Location: ${res.bornLocation}</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         `);
