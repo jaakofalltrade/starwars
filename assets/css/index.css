@@ -50,6 +50,7 @@ body {
     width: 100%;
     height: auto;
     min-height: 500px;
+    padding-bottom: 30px;
 }
 
 .content-container {
@@ -60,7 +61,7 @@ body {
     width: 95%;
     height: auto;
     min-height: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     margin: auto auto;
 }
 
@@ -152,7 +153,7 @@ body {
 .back-info {
     position: relative;
     margin: auto auto;
-    width: 95%;
+    width: 85%;
 }
 
 .back-info .back-body p {
@@ -163,6 +164,7 @@ body {
 }
 
 .back-info .back-header {
+    margin-bottom: 10px;
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -260,6 +262,13 @@ body {
   
 .card-1:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.pagination {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: red;
 }
 
 @media screen and (max-device-width: 760px) {
