@@ -284,6 +284,7 @@ body {
 }
 
 .page-btn {
+    cursor: pointer;
     height: 60px;
     width: 90px;
     font-size: 30px;
@@ -293,7 +294,9 @@ body {
 }
 
 .disabled-btn {
+    cursor: not-allowed;
     background-color: #696969;
+    color: #67590f;
 }
 
 .page-btn:hover {

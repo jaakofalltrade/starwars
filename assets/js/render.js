@@ -1,13 +1,23 @@
 console.log(dataJSON);
 const findMatch = (word) => {
     API.get(`${swURL}?search=${word}`)
-        .then(x => {
-            return x.results;
-        })
         .then(y => {
+            let prevButton;
+            let nextButton;
+            if (y.previous == null) {
+                prevButton = `<button disabled data-link="${y.previous}" title="Previous" class="page-btn disabled-btn"><i class="fa fa-lg fa-chevron-left"></i></button>`;
+            } else {
+                prevButton = `<button onclick="showPage('${y.previous}');" data-link="${y.previous}" title="Previous" class="page-btn"><i class="fa fa-lg fa-chevron-left"></i></button>`;
+            }
+
+            if (y.next == null) {
+                nextButton = `<button disabled data-link="${y.next}" title="Next" class="page-btn disabled-btn"><i class="fa fa-lg fa-chevron-right"></i></button>`;
+            } else {
+                nextButton = `<button onclick="showPage('${y.next}');" data-link="${y.next}" title="Next" class="page-btn"><i class="fa fa-lg fa-chevron-right"></i></button>`;
+            }
             let dataBox = [];
             if ((y != undefined) && (y != '')) {
-                y.map(result => {
+                y.results.map(result => {
                     dataJSON.map(res => {
                         if (res.name == result.name) {
                             dataBox.push(`
@@ -41,7 +51,15 @@ const findMatch = (word) => {
                         }
                     });
                 });
-                $('.body-container').html(`<div class="content-container">${dataBox.join('')}</div>`);
+                $('.body-container').html(`
+                <div class="content-container">${dataBox.join('')}</div>
+                <div class="pagination">
+                    <div class="pagination-cont">
+                        ${prevButton}
+                        ${nextButton}
+                    </div>
+                </div>
+            `);
             } else {
                 $('.body-container').html(`<div class="cannot-find"><h1>Find what you are looking for, I cannot.</h1></div>`);
             }
