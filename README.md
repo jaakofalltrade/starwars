@@ -4,7 +4,7 @@ A simple starwars app that you can **search** and **browse** characters to see i
 
 ## What I used
 
-I used [jQuery](https://jquery.com/) for most of the coding part, [Fontawesome](https://fontawesome.com/) for the fonts and [SWAPI](https://swapi.co/) the starwars api for the starwars data. I also used a json file for the image links because [SWAPI](https://swapi.co/) does not contain image links. I forgot who owns that json file so if anyone knows who is the original owner of the json file *contact me*.
+I used [jQuery](https://jquery.com/) for most of the coding part, [Fontawesome](https://fontawesome.com/) for the fonts and [SWAPI](https://swapi.co/) the starwars api for the starwars data. I also used a separate hardcoded json file for the image links because [SWAPI](https://swapi.co/) does not contain image links. I forgot who owns that json file so if anyone knows who is the **original owner** of the json file *contact me*.
 
 ## How to run
 
