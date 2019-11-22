@@ -11,7 +11,7 @@ I used [jQuery](https://jquery.com/) for most of the coding part, [Fontawesome](
 There is not much to it. You can run this via __live server__ in **VSCode**, **XAMPP**, or by even opening the **HTML file** in a browser.
 
 You can access it  by
-[http://localhost:3000](http://localhost) in the browser if you used **live server** or **XAMPP**.
+[http://localhost](http://localhost) in the browser if you used **live server** or **XAMPP**.
 
 
 ## Contributing
