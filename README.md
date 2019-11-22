@@ -1,6 +1,6 @@
 # Starwars Website
 
-A simple starwars app that you can **search** and **browse** characters to see information.
+A simple starwars app that you can **search** and **browse** characters to see their information.
 
 ## What I used
 
