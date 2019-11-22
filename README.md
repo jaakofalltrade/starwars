@@ -1,6 +1,7 @@
 # Starwars Website
 
 A simple starwars app that you can **search** and **browse** characters to see their information.
+[View](https://jaakofalltrade-starwarsapi.netlify.com/)
 
 ## What I used
 
